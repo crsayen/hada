@@ -6,7 +6,9 @@
   "repository": "https://github.com/crsayen/hada.git",
   "author": "Chris Sayen",
   "license": "MIT",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "bugs": {
     "url": "https://github.com/crsayen/hada/issues"
   },
