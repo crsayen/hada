@@ -1,11 +1,18 @@
 {
   "name": "hada",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "bytes | string | hex conversions",
   "main": "lib/index.js",
   "types": "/lib/index.d.ts",
   "repository": "https://github.com/crsayen/hada.git",
-  "keywords": ["bytes", "hex", "conversion", "ascii", "array", "bytearray"],
+  "keywords": [
+    "bytes",
+    "hex",
+    "conversion",
+    "ascii",
+    "array",
+    "bytearray"
+  ],
   "author": "Chris Sayen",
   "license": "MIT",
   "files": [
