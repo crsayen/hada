@@ -2,7 +2,7 @@
 helpers for converting between bytes, strings, numbers, and more
 
 ```typescript
-import hada from 'hada'
+import * as hada from 'hada'
 
 hada.bytesToInt([255, 255]) // 65535
 
