@@ -41,6 +41,7 @@ describe('bytesToInt', () => {
 describe('hexTobytes', () => {
   it('should convert a hex string to an array of numbers', () => {
     const tests = [
+      ['fff', [0x0f, 0xff]],
       ['deadbeef', [0xde, 0xad, 0xbe, 0xef]],
       ['DEADBEEF', [0xde, 0xad, 0xbe, 0xef]],
       ['0123456789abcdef', [0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef]],
@@ -83,12 +84,12 @@ describe('intToHex', () => {
 })
 describe('intToBytes', () => {
   it('should convert a number to a properly padded number array', () => {
-    // [number, hexlength, padwith, expected]
+    // [number, numBytes, padwith, expected]
     const tests = [
-      [1, 8, 'f', [0xff, 0xff, 0xff, 0xf1]],
-      [0x1f, 8, 'f', [0xff, 0xff, 0xff, 0x1f]],
-      [0x00ff00, 6, '0', [0x00, 0xff, 0x00]],
-      [0x01ff00, 6, '0', [0x01, 0xff, 0x00]],
+      [1, 4, 255, [0xff, 0xff, 0xff, 0x01]],
+      [0x0f, 4, 255, [0xff, 0xff, 0xff, 0x0f]],
+      [0x00ff00, 3, 0, [0x00, 0xff, 0x00]],
+      [0x01ff00, 1, 0, [0x01, 0xff, 0x00]],
       [0x1234, null, null, [0x12, 0x34]],
     ]
     tests.forEach(([num, len, pad, expected]) => {
