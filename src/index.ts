@@ -55,9 +55,7 @@ export function intToBytes(
   padwith = padwith == null ? 0 : padwith
   let hex = intToHex(n)
   hex = padStart(hex, hex.length + (hex.length % 2), '0')
-  console.log('hex:', hex)
   const bytes = hexToBytes(hex)
-  console.log('bytes', bytes)
   const fillLength = length - bytes.length
   if (fillLength < 1) return bytes
   return [...Array(fillLength).fill(padwith), ...bytes]
