@@ -1,6 +1,6 @@
 {
   "name": "hada",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "bytes | string | hex conversions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
