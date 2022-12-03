@@ -1,6 +1,6 @@
 {
   "name": "hada",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "bytes | string | hex conversions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/expect": "^24.3.0",
     "@types/mocha": "^8.2.2",
-    "mocha": "^8.3.2",
+    "mocha": "^10.1.0",
     "prettier": "^2.2.1",
     "ts-mocha": "^8.0.0",
     "tslint": "^6.1.3",
