@@ -19,6 +19,6 @@ hada.asciiHexToString('68656c6c6f20776f726c64') // 'hello world'
 hada.stringToAsciiBytes('hello world')
 //[104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]
                                          
-hada.asciiBytesToString([104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100])
+hada.asciiBytesToString([104, 101, 108, 108, 111, 32, 119, 111, 114, 109, 100])
 // 'hello world'
 ```
